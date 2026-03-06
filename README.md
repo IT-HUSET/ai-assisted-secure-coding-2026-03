@@ -12,12 +12,7 @@
 # Prerequisites
 
 - GitHub account, a free account works.
-- VS Code with the following extensions:
-  - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) — core language support, debugger, test runner
-  - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) — fast IntelliSense and type information
-  - [Pyright](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright) — static type checker
-  - [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff) — linter and formatter
-  - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) — send HTTP requests and inspect responses directly from VS Code
+- VS Code (extensions may vary)
 - Your preferred terminal emulator (optional, only needed if running locally)
 - Claude Subscription, a _Free_ plan works. You can get one at [Claude Pricing][claude-pricing]
 
@@ -25,7 +20,7 @@
 
 # Setup
 
-We'll go over two different exercises where we'll work together with Claude Code to perform programming tasks; the exercises can be carried out locally on your machine or in _GitHub Codespaces_.
+We'll go over two different exercises where we'll work together with Claude Code to perform quality-related tasks; the exercises can be carried out locally on your machine or in _GitHub Codespaces_.
 
 ## 1. Fork the Repository
 
@@ -88,19 +83,6 @@ Select the option to authenticate with a Claude subscription and use your accoun
 
 # Exercises
 
-## E1 - Refactor the Asset Management Application
-
-A FastAPI web application that manages hardware and software assets in an organisation. The code is under `assets_management_app`. Use Claude Code to extend it with the following:
-
-1. An endpoint to add one or more tags to an asset.
-2. Activate or deactivate an asset. Inactive assets should not appear in listings by default; record when and by whom the asset was deactivated.
-3. Decommission an asset. This is a permanent action; record when and by whom it was carried out.
-4. Retrieve an asset by ID. Inactive and decommissioned assets can be looked up by ID.
-
-## E2 - Create an Application from Scratch
-
-A companion web API where devices can report security events caught by a local agent. Requirements are documented in `threat_management_app/README.md`.
-
-1. Adjust the description or requirements as needed — for example, swap the language or stack, or tweak the functional requirements.
-2. Instruct Claude to read `threat_management_app/README.md` and implement the API with tests.
-3. Review the output and iterate with follow-up prompts.
+## E1 - Procure Security Requirements
+## E2 - Genereate Threat Models for an Application and Infrastructure
+## E3 - Improve weaknesses in Application Code and Infrastructure
