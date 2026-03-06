@@ -1,0 +1,65 @@
+# ──────────────────────────────────────────
+# Default: normalize line endings on check-in
+# ──────────────────────────────────────────
+* text=auto eol=lf
+
+# ──────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────
+*.py     text eol=lf
+*.pyi    text eol=lf
+*.pyw    text eol=lf
+
+# ──────────────────────────────────────────
+# Web / config
+# ──────────────────────────────────────────
+*.json   text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.toml   text eol=lf
+*.ini    text eol=lf
+*.cfg    text eol=lf
+*.env    text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.js     text eol=lf
+*.ts     text eol=lf
+
+# Shell scripts
+*.sh     text eol=lf
+*.bash   text eol=lf
+
+# Windows scripts (keep CRLF)
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+# ──────────────────────────────────────────
+# Binary — never diff or convert
+# ──────────────────────────────────────────
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.svg    binary
+*.webp   binary
+*.pdf    binary
+*.zip    binary
+*.gz     binary
+*.tar    binary
+*.whl    binary
+*.pyc    binary
+*.pyd    binary
+*.so     binary
+*.db     binary
+*.sqlite binary
+*.sqlite3 binary
+
+# ──────────────────────────────────────────
+# Diff drivers
+# ──────────────────────────────────────────
+*.py     diff=python
+*.md     diff=markdown
