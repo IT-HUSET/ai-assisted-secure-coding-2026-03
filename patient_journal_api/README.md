@@ -14,4 +14,4 @@ The system should:
 
 ## Data Security
 
-Data ought to be protected during transit and at rest given the the nature of the information and the amount of PII that the system processes.
+Data ought to be protected during transit and at rest given the the nature of the information and the amount of PII that the system processes and stores.
