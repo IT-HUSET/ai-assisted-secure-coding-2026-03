@@ -87,7 +87,7 @@ Select the option to authenticate with a Claude subscription and use your accoun
 
 The following exercises are developed around a fictitious patient journal system which we are going to co-develop with Claude from the ground up, from requirements to development and testing.
 
-All the interactions with Claude ought to run in *Plan Mode*.
+Under each application directory for both examples, there is a *prompts* directory with example of prompts for Claude to carry out the tasks.
 
 ## E1 - Procure Security Requirements
 
@@ -104,3 +104,5 @@ We have a second application in `malware_analysis_api` with an existing implemen
 - Review security configuration in the CI/CD pipelines
 - Review the terraform project to get suggestions
 - Add security testing according to [OWASP Web Security Testing Guide][owasp-wstg]
+
+Ensure this runs as *Plan Mode*.
