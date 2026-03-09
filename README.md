@@ -87,20 +87,20 @@ Select the option to authenticate with a Claude subscription and use your accoun
 
 The following exercises are developed around a fictitious patient journal system which we are going to co-develop with Claude from the ground up, from requirements to development and testing.
 
-All the interactions with Claude ought to run in *Plan Mode*
+All the interactions with Claude ought to run in *Plan Mode*.
 
 ## E1 - Procure Security Requirements
 
-The file `patient_journal_api/README.md` contains a basic description of the application, functional requirements, details of the planned infrastructure and it stack. The goal is to have claude read the app description and complement it with security requirements consideration [OWASP ASVS][owasp-asvs] as the base/source catalog of security requirements.
+The file `patient_journal_api/README.md` contains a basic description of the application, functional requirements, details of the planned infrastructure and it stack. The goal is to have Claude read the app description and complement it with security requirements considerations, using [OWASP ASVS][owasp-asvs] as the base/source catalog of security requirements.
 
 Generate an initial threat model using the STRIDE method for the application. 
 
 
-## E2 - Improve weaknesses in Application Code, CI/CD and Application Infrastructure
+## E2 - Address Weaknesses in Application Code, CI/CD and Application Infrastructure
 
-We have a second application in `malware_analysis_api`with an existing implementation that we need to take a look at to:
+We have a second application in `malware_analysis_api` with an existing implementation that we need to take a look at to:
 
 - Find weaknesses and vulnerabilities in the existing application code
 - Review security configuration in the CI/CD pipelines
-- Review the terrafrom project to get suggestions
+- Review the terraform project to get suggestions
 - Add security testing according to [OWASP Web Security Testing Guide][owasp-wstg]
