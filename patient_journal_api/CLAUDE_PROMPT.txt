@@ -1,0 +1,6 @@
+1. Look at the readme file found in this directory to get a rough descripton of what the system should do and its nature. We need to draw security requirements for this web application based on the description, we should extract the requirements from OWASP ASVS (ingest from https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/docs_en/OWASP_Application_Security_Verification_Standard_5.0.0_en.csv).
+
+2. Make sure each requirement we document references the correct section in ASVS, some instructions on how to reference are found in the section "How To Reference ASVS Requirements" in https://owasp.org/www-project-application-security-verification-standard/
+
+
+3. Produce an initial threat model using the STRIDE model and save it as THREAT-MODEL.md
