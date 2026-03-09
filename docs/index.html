@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude Code for Beginners</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/moon.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title slide -->
+        <section>
+          <h1>Claude Code for Beginners</h1>
+        </section>
+
+        <!-- Blank slide -->
+        <section>
+          <h3>Agenda</h3>
+          <ul>
+            <li>Introduction to Claude / Claude Code</li>
+            <li>Getting Set up</li>
+            <li>Review of exercises</li>
+            <li>Closing notes and Questions</li>
+          </ul>
+        </section>
+
+        <!-- What Claude Code is -->
+        <section>
+          <h2>What is Claude Code?</h2>
+          <table>
+            <thead>
+              <tr><th>Claude</th><th>Claude Code</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Conversational AI assistant (claude.ai / API)</td>
+                <td>CLI agent built on top of Claude</td>
+              </tr>
+              <tr>
+                <td>You describe problems in chat</td>
+                <td>Claude reads, edits and runs code directly in your project</td>
+              </tr>
+              <tr>
+                <td>No access to your filesystem</td>
+                <td>Operates on real files, runs commands, commits changes</td>
+              </tr>
+              <tr>
+                <td>Stateless across conversations</td>
+                <td>Maintains project context via <code>CLAUDE.md</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Configuration -->
+        <section>
+          <section>
+            <h2>Configuration &amp; Permissions</h2>
+            <p>Claude Code is configured at two levels:</p>
+            <ul>
+              <li><strong><code>CLAUDE.md</code></strong> — project instructions Claude reads every session: conventions, build commands, architecture notes. Run <code>/init</code> to generate one.</li>
+              <li><strong><code>.claude/settings.json</code></strong> — controls tool permissions and environment variables, per-project or user-wide.</li>
+            </ul>
+            <p><strong>Permissions</strong> use <code>allow</code> and <code>deny</code> lists to decide which tools Claude can invoke without asking first.</p>
+          </section>
+          <section>
+            <h3>Why safe configuration matters</h3>
+            <p>
+              Overly permissive settings let Claude modify or delete files and push code without prompting.
+              Start restrictive and widen only what you need.
+            </p>
+          </section>
+        </section>
+
+        <!-- Sandboxing -->
+        <section>
+          <section>
+            <h2>Sandboxing</h2>
+            <p><em>Applies to participants running Claude Code locally via the CLI.</em></p>
+            <p>
+              Sandboxing restricts the commands Claude Code can run to a defined set of filesystem paths and network hosts,
+              reducing the risk of unintended changes outside your working directory.
+            </p>
+            <p>Run <code>/sandbox</code> inside Claude Code to enable it. On macOS it works out of the box; Linux and WSL2 require additional packages.</p>
+          </section>
+          <section>
+            <h3>Why sandboxing matters</h3>
+            <p>
+              Without sandboxing, a misunderstood instruction could overwrite unrelated files or make unintended network calls.
+              Treat it as a safety net, especially when working with unfamiliar codebases.
+            </p>
+          </section>
+        </section>
+
+        <!-- Skills and plugins -->
+        <section>
+          <h2>Extending Claude Code</h2>
+          <p>Claude Code can be extended in two ways:</p>
+          <ul>
+            <li>
+              <strong>Skills</strong> — custom slash commands (<code>/your-command</code>) defined as prompt templates in <code>.claude/skills/</code>.
+              Use them to encode repeatable workflows such as <em>/commit</em>, <em>/review</em>, or project-specific tasks.
+            </li>
+            <li>
+              <strong>MCP Plugins</strong> — the Model Context Protocol (MCP) lets Claude connect to external tools and data sources
+              (databases, APIs, services) as if they were native tools. Configure servers under the <code>mcpServers</code> key in <code>settings.json</code>.
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+      });
+    </script>
+  </body>
+</html>
