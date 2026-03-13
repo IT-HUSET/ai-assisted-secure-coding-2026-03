@@ -9,7 +9,7 @@
 
 - GitHub account — a free account works.
 - Claude subscription — a Pro is needed, you can get one at [Claude Pricing][claude-pricing].
-- Git Bash or WSL2 — omly if you are planning to [Run the lab locally](#run-locally)
+- Git Bash or WSL2 — only if you are planning to [Run the lab locally](#run-locally)
 
 # Setup
 
