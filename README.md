@@ -1,11 +1,5 @@
-[gh-conf-ssh-keys]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 [gh-troubleshoot-ssh-keys-conf]: https://docs.github.com/authentication/troubleshooting-ssh
 [claude-pricing]: https://claude.com/pricing
-[claude-install]: https://claude.com/product/claude-code
-[cc-settings]: https://docs.anthropic.com/en/docs/claude-code/settings
-[cc-memory]: https://docs.anthropic.com/en/docs/claude-code/memory
-[cc-permissions]: https://docs.anthropic.com/en/docs/claude-code/settings#permissions
-[cc-sandboxing]: https://www.anthropic.com/engineering/claude-code-sandboxing
 [owasp-wstg]: https://owasp.org/www-project-web-security-testing-guide/
 [owasp-asvs]: https://owasp.org/www-project-application-security-verification-standard/
 
@@ -14,7 +8,8 @@
 # Prerequisites
 
 - GitHub account — a free account works.
-- Claude subscription — a _Free_ plan works. You can get one at [Claude Pricing][claude-pricing].
+- Claude subscription — a Pro is needed, you can get one at [Claude Pricing][claude-pricing].
+- Git Bash or WSL2 — omly if you are planning to [Run the lab locally](#run-locally)
 
 # Setup
 
