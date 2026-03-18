@@ -233,7 +233,7 @@ Tasks:
 >Example prompt:
 >Produce an initial threat model using the STRIDE model and save it as THREAT-MODEL.
 
-3. You are tasked to figure out how to host this, update the README.md file with new section called "Infrastructure" and add details on how this application will be hosted; be vague about security details and let cloud suggest the configuration.
+3. You are tasked to figure out how to host this, update the `patient_journal_api/README.md` file with new section called "Infrastructure" and add details on how this application will be hosted; be vague about security details and let cloud suggest the configuration.
 
 4. Ask Claude to review the new "Infrastructure section", generate a basic diagram using mermaid and update the threat model previously generated.
 >Example prompt:
