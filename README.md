@@ -58,6 +58,8 @@ If the Claude Code tab is not visible yet, open the command palette with _Ctrl+S
 
 Select the option to authenticate with a Claude subscription and use your account to sign in.
 
+>Dismiss the dialog that pops up by hitting "Cancel" and copy the URL provided in the Claude tab, copy and paste in your browser to authenticate and follow the instructions shown in the page to finish up.
+
 You are all set — jump straight to the [Exercises](#exercises) section.
 
 ---
