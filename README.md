@@ -243,9 +243,9 @@ Tasks:
 
 We have a second application in `malware_analysis_api` with an existing implementation that we need to take a look at to:
 
-- Find weaknesses and vulnerabilities in the existing application code
-- Review security configuration in the CI/CD pipelines
-- Review the terraform project to get suggestions
-- Add security testing according to [OWASP Web Security Testing Guide][owasp-wstg]
-
-Ensure this runs as *Plan Mode*.
+1. Find weaknesses and vulnerabilities in the existing application code
+>Prompt: do a security scan of the code to find weaknesses and vulnerabilties, save the results to a markdown file called sec-audit.md
+2. Review security configuration in the CI/CD pipelines
+>Prompt: Check the existing github workflow and look for security issues such as: overly permissive settings, shell injection, and make sure we pin the actions version. Produce a plan before modifying.
+3. Review the terraform project to get suggestions
+>Prompt: Review the terraform project under `infrastructure/` and propose improvements to harden its security configuration as well ensuring we follow security best practices for Terraform.
