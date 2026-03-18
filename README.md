@@ -222,7 +222,22 @@ Under each application directory for both examples, there is a *prompts* directo
 
 The file `patient_journal_api/README.md` contains a basic description of the application, functional requirements, details of the planned infrastructure and it stack. The goal is to have Claude read the app description and complement it with security requirements considerations, using [OWASP ASVS][owasp-asvs] as the base/source catalog of security requirements.
 
-Generate an initial threat model using the STRIDE method for the application.
+Tasks:
+1. Generate an initial list of security requirements using OWASP ASVS, use the prompt:
+>Example prompt: 
+>Look at the file README.md found in this directory so you can understand what the system does and its initial set of functional requirements; draw security requirements for this web application based on the context > obtained and the OWASP ASVS project (ingest from https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/docs_en/OWASP_Application_Security_Verification_Standard_5.0.0_en.csv) pulling only the requirements relevant for a web application of this nature.asp.org/www-project-application-security-verification-standard/
+
+>Let' make sure that each security requirement documented references the corresponding ASVS section.
+
+2. Ask Claude to generate a Threat Model using STRIDE
+>Example prompt:
+>Produce an initial threat model using the STRIDE model and save it as THREAT-MODEL.
+
+3. You are tasked to figure out how to host this, update the README.md file with new section called "Infrastructure" and add details on how this application will be hosted; be vague about security details and let cloud suggest the configuration.
+
+4. Ask Claude to review the new "Infrastructure section", generate a basic diagram using mermaid and update the threat model previously generated.
+>Example prompt:
+> We've added a section "Infrastructure" to README.md with information on how we plan to layout infrastructure. Have a look and generate an initial diagram and update the "Infrastructure section" with key details. Make any necessary updates to the threat model (THREAT_MODEL.md) given the newly introduced infrastructure.
 
 ## E2 - Address Weaknesses in Application Code, CI/CD and Application Infrastructure
 

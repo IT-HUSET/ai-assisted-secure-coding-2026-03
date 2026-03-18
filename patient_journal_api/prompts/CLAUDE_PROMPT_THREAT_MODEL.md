@@ -1,1 +1,0 @@
-Produce an initial threat model using the STRIDE model and save it as THREAT-MODEL.mdxw
